@@ -1,15 +1,12 @@
-<div class="row">
-  <div class="shadow-lg col-sm-4 p-3">
-    <div class="card">
 
-      <img class="propImg" src="assets/img/house_default.jpg" alt="default-house">
-      <div class="card-body p-2">
-        <h1>{{Property.name}}</h1>
-        <h3>{{Property.Type}}</h3>
-        <h4>{{Property.Price}}</h4>
-      </div>
-    </div>
+<div class="card">
+  <img class="propImg" [src]="property.Img" alt="house picture">
+  <div class="card-body p-2">
+    <h3>{{property.Name}}</h3>
+    <h4>{{property.Type}}</h4>
+    <h4>{{property.Price}}</h4>
   </div>
-
 </div>
+
+
 

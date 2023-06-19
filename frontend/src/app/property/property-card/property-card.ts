@@ -1,5 +1,4 @@
-import { Component } from "@angular/core";
-import { IProperty } from "src/app/mockdata";
+import { Component, Input } from "@angular/core";
 
 @Component({
   selector: 'app-property-card',
@@ -9,11 +8,5 @@ import { IProperty } from "src/app/mockdata";
 
 
 export class PropertyCardComponent{
-  Property: IProperty = {
-    "Id": 1,
-    "name": "Brila House",
-    "Type": "House",
-    "Price": 12000,
-
-  };
+@Input()property: any
 };
